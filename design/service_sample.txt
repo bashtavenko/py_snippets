@@ -1,0 +1,25 @@
+enum ProductCategory {
+  BOOKS = 0;
+  AUTO = 1;
+}
+
+message QueryRequest {
+  required string search_term = 1;
+  optional ProductCategory product_category = 1;
+}
+
+message Product {
+  required string product_id = 1;
+  required ProductCategory product_category = 2;
+  required int rank = 3;
+  requried string vendor = 4;
+  required string url = 5;
+}
+
+message QueryResult {
+  repeated Product products = 1;
+}
+
+service ShoppingSearch {
+  rpc Search(QueryRequest) returns (QueryResult);
+}

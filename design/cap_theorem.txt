@@ -1,0 +1,15 @@
+CAP THEOREM
+
+Consistency - a read is guaranteed to return the most recent write for a given
+client.
+
+Availability - a non-failing node will return a reasonable response withing a
+reasonable amount of time (no error or timeout).
+
+Partition Tolerance - the system will continue to function when network
+partition occurs.
+
+
+CP - Consistency / Partition Tolerance. Could get timeout or an error.
+AP - Availability / Partition Tolerance. Could get stale data. Accept writes that
+can be processed later.
