@@ -25,7 +25,7 @@ def cut_rod(length):
     """
     if length == 0:
         return 0
-    revenue = -sys.maxint
+    revenue = -sys.maxsize - 1
     for n in range(1, length + 1):   # n is a cut point
         revenue = max(revenue, PRICE[n] + cut_rod(length - n))
     return revenue
@@ -36,7 +36,7 @@ def cut_rod_memoized(length, cache={}):
     if length == 0:
         return 0
     elif length not in cache:
-        revenue = -sys.maxint
+        revenue = -sys.maxsize - 1
         for n in range(1, length + 1):
             revenue = max(revenue, PRICE[n] + cut_rod_memoized (length - n, cache))
         cache[length] = revenue
@@ -48,7 +48,7 @@ def cut_rod_bottom_up(length):
     """Bottom-up non-recursive version."""
     cache = {0: 0}
     for j in range(1, length + 1):
-        revenue = -sys.maxint
+        revenue = -sys.maxsize - 1
         for n in range(1, j + 1):
             revenue = max(revenue, PRICE[n] + cache[j - n])
         cache[n] = revenue
@@ -61,7 +61,7 @@ def cut_rod_bottom_up_path(length):
     cache = {0: 0}
     choices = {0: 0}
     for j in range(1, length + 1):
-        revenue = -sys.maxint
+        revenue = -sys.maxsize - 1
         for n in range(1, j + 1):
             if revenue < PRICE[n] + cache[j - n]:
                 revenue = PRICE[n] + cache[j - n]

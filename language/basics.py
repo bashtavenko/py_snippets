@@ -17,6 +17,7 @@ range(3)  # from zero up to the number(not including, 0, 1, 2
 range(1, 5)  # from number to number not including, 1, 2, 3, 4
 range(2, -1, -1)  # From number down not including, 2, 1, 0
 
+
 # Slicing
 # Just like ranges but with ':' instead of ','
 #  [start:stop:step]
@@ -29,10 +30,18 @@ range(2, -1, -1)  # From number down not including, 2, 1, 0
 # [1, 3, 5]
 # Also [False:]
 # [2, 3, 4, 5]
+# Shallow copy of list [:]
+# Meaning entire sequence
 
 # List comp
 [i for i in [1, 2, 3]]  # => [1, 2, 3]
 [x for x in [3, 4, 5, 6, 7] if x > 5]  # => [6, 7]
+
+# Dict comp
+vocab = {} # some vocab
+ch_to_i = {char: i for i, char in enumerate(vocab)}
+i_to_ch = {i: char for i, char in enumerate(vocab)}
+
 
 # List stuff
 a = list("abc")  # list from str

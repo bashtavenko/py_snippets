@@ -1,18 +1,14 @@
 def run(data):
-    def do_diagonal(index_i, index_j):
-        while index_j >= 0 and index_i < len(data[0]):
-            result.append(data[index_i][index_j])
-            index_i += 1
-            index_j -= 1
+    ch_to_i = {char: i for i, char in enumerate(vocab)}
+    i_to_ch = {i: char for i, char in enumerate(vocab)}
 
-    result = []
-    for col in range(len(data)):
-        do_diagonal(0, col)
-    for row in range(1, len(data)):
-        do_diagonal(row, len(data) - 1)
-    return result
+    print(ch_to_i)
+    print(i_to_ch)
+
+    list = [(i, j) for i in range(2) for j in range(3)]
+    print(list)
 
 
 if __name__=="__main__":
-    a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print(run(a))
+    vocab = "$abcdefghijklmnopqrstuvwxyz"
+    print(run(vocab))

@@ -1,6 +1,6 @@
 import unittest
 
-import rod_cutting as m
+import dp.rod_cutting as m
 
 
 class RodCuttingTestCase(unittest.TestCase):

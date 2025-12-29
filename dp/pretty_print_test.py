@@ -21,7 +21,6 @@ class PrettyPrintTestCase(unittest.TestCase):
           'amet .n',
           'dapibusin .n' ,
           'aenean.n']
-      print 'Result:', result
       self.assertListEqual(expected, result)
 
 
