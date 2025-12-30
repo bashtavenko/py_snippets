@@ -1,6 +1,7 @@
 """Partition an array into Even and Odd."""
 
 import random
+import sys
 
 
 def even_odd(a):
@@ -34,3 +35,11 @@ def shuffle_sort(a):
 
 def shuffle_sort_ex(a, p):
     return [a[p.index(s)] for s in sorted(p)]
+
+def sliding_window(a, k):
+    # One-liner
+    #return max(max(a[i:i + k]) for i in range(len(a) - k + 1))
+    max_result = -sys.maxsize
+    for i in range(len(a) - k + 1):
+        max_result = max(max_result, max(a[i:i + k]))
+    return max_result

@@ -11,7 +11,7 @@ FLAGS = flags.FLAGS
 
 flags.DEFINE_string("image", "testdata/ny_plate.png", "Path to an image")
 flags.DEFINE_bool("no_plate_detect", False, "Run OCR on full image (skip ROI detection)")
-flags.DEFINE_bool("show", False, "Show debug windows")
+flags.DEFINE_bool("show", True, "Show debug windows")
 flags.DEFINE_integer("psm", 7, "Tesseract page segmentation mode (PSM)")
 flags.DEFINE_integer("oem", 3, "Tesseract OCR engine mode (OEM)")
 flags.DEFINE_string(
@@ -118,7 +118,7 @@ def ocr_text(bgr_or_gray):
             best_conf = avg_conf
             best_img = img
 
-    return (best_text, best_img)
+    return best_text, best_img
 
 
 def main(_argv):

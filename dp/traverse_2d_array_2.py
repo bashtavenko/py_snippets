@@ -29,9 +29,9 @@ def max_sum(data):
 if __name__ == '__main__':
     data = [[1, 2],
             [3, 3]]
-    print max_sum(data) # 7
+    print (max_sum(data)) # 7
 
     data = [[1, 2, 7],
             [0, 2, 1],
             [8, 5, 1]]
-    print max_sum(data)  # 1 + 0 + 8 + 5 + 1
+    print (max_sum(data))  # 1 + 0 + 8 + 5 + 1

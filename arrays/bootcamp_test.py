@@ -1,7 +1,7 @@
 """Tests for bootcamp."""
 import unittest
 
-import bootcamp
+from arrays import bootcamp
 
 
 # Slicing:
@@ -62,6 +62,10 @@ class BootcampTestCase(unittest.TestCase):
         n = 3
         w = [[0] * n for _ in range(n)]
         print(w)
+
+    def testSlidingWindow(self):
+        a = [1, 3, -1, -3, 5, 3, 6, 7]
+        self.assertEqual(7, bootcamp.sliding_window(a, 3))
 
 
 if __name__ == '__main__':

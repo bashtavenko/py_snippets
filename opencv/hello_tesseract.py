@@ -8,8 +8,6 @@ from absl import app, flags
 FLAGS = flags.FLAGS
 
 flags.DEFINE_string("image", "testdata/sample.jpeg", "Path to an image")
-# flags.DEFINE_string("image", "testdata/ny_plate.png", "Path to an image")
-
 
 # https://github.com/madmaze/pytesseract
 def run(_argv):
