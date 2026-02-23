@@ -5,7 +5,7 @@ import sys
 
 
 def get_largest_pair(a):
-    x, y = -sys.maxint, -sys.maxint
+    x, y = -sys.maxsize, -sys.maxsize
     # Move through while maintaining invariant of x >= y
     for v in a:
         if v > x:
@@ -16,7 +16,7 @@ def get_largest_pair(a):
         elif v > y:  # We know that x > y and so replace only y
             y = v
 
-    if x == y or x == -sys.maxint or y == -sys.maxint:
+    if x == y or x == -sys.maxsize or y == -sys.maxsize:
         return ()
     else:
         return x, y

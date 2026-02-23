@@ -6,7 +6,7 @@
 
 import unittest
 
-import bootcamp as b
+import bst.bootcamp as b
 
 
 class BootcampTestCase(unittest.TestCase):

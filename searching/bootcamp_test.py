@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp as m
+import searching.bootcamp as m
 
 
 class BootcampTestCase(unittest.TestCase):

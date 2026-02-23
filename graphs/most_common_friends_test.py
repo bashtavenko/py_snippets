@@ -1,7 +1,7 @@
 """Tests for most common friends."""
 import unittest
 
-import most_common_friends as m
+import graphs.most_common_friends as m
 
 class NetworkTestCase2(unittest.TestCase):
   def setUp(self):

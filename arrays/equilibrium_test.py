@@ -1,6 +1,6 @@
 import unittest
 
-import equilibrium as m
+import arrays.equilibrium as m
 
 
 class EquilibriumTestCase(unittest.TestCase):

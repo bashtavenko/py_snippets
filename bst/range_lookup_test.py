@@ -1,7 +1,7 @@
 """Tests for range lookup."""
 import unittest
 
-import range_lookup as m
+import bst.range_lookup as m
 
 class RangeLookupTestCase(unittest.TestCase):
 

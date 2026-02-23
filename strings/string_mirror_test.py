@@ -1,7 +1,7 @@
 """Tests for mirror palindrome."""
 import unittest
 
-import string_mirror as m
+import strings.string_mirror as m
 
 
 class MirorTestCase(unittest.TestCase):

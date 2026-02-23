@@ -1,7 +1,7 @@
 """Tests for top queries."""
 import unittest
 
-import rabin_karp as m
+import strings.rabin_karp as m
 
 class RabinKarpTestCase(unittest.TestCase):
     def testQueries_1(self):

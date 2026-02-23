@@ -1,6 +1,6 @@
 import unittest
 
-import pangram as m
+import strings.pangram as m
 
 
 class PangramTestCase(unittest.TestCase):

@@ -1,7 +1,7 @@
 """Tests for roman to decimal."""
 import unittest
 
-import roman_to_decimal as m
+import strings.roman_to_decimal as m
 
 
 class RomanTestCase(unittest.TestCase):

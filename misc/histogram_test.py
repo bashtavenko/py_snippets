@@ -2,7 +2,7 @@
 
 import unittest
 
-import histogram as m
+import misc.histogram as m
 
 
 class HistogramTestCase(unittest.TestCase):

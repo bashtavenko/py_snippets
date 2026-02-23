@@ -2,7 +2,7 @@
 
 import unittest
 
-import min_distance
+import strings.min_distance as min_distance
 
 
 class DistanceTestCase(unittest.TestCase):

@@ -12,7 +12,7 @@ and black.
 We need to run DFS from all vertices if graph is disconnected.
 """
 
-import bootcamp as b
+import graphs.bootcamp as b
 
 
 def detect_cycle(graph):

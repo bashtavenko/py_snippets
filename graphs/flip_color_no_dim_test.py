@@ -2,7 +2,7 @@
 import unittest
 
 import collections
-import flip_color_no_dim as m
+import graphs.flip_color_no_dim as m
 
 class FlipColorTestCase(unittest.TestCase):
 

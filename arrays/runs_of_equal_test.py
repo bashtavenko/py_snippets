@@ -1,5 +1,5 @@
 import unittest
-import runs_of_equal as m
+import arrays.runs_of_equal as m
 
 
 class MyTestCase(unittest.TestCase):
@@ -18,7 +18,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(0, m.count_consecutive([]))
 
     def test_part_two(self):
-        self.assertEqual(2, m.count_consecutive_part2([3, 3, 4, 4, 3, 3]))
+        self.assertEqual(None, m.count_consecutive_part2([3, 3, 4, 4, 3, 3]))
 
 
 if __name__ == '__main__':

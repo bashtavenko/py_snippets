@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp as m
+import heaps.bootcamp as m
 
 
 class BootcampTestCase(unittest.TestCase):

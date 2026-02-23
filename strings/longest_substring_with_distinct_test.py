@@ -1,6 +1,6 @@
 import unittest
 
-import longest_substring_with_distinct as m
+import strings.longest_substring_with_distinct as m
 
 
 class SubstringTestCase(unittest.TestCase):

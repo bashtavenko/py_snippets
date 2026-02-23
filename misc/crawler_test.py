@@ -1,7 +1,7 @@
 """Tests for crawler."""
 import unittest
 
-import crawler as m
+import misc.crawler as m
 
 class CrawlerTestCase(unittest.TestCase):
 

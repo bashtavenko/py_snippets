@@ -2,7 +2,7 @@
 
 import unittest
 
-import spikes as m
+import misc.spikes as m
 
 
 class SpikesTestCase(unittest.TestCase):

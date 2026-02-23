@@ -2,8 +2,8 @@
 
 import unittest
 
-import bootcamp as b
-import first_greater as m
+import bst.bootcamp as b
+import bst.first_greater as m
 
 
 class FirstGreaterTestCase(unittest.TestCase):

@@ -2,7 +2,7 @@
 import unittest
 from parameterized import parameterized
 
-import brace_expansion as m
+import misc.brace_expansion as m
 
 class BraceExpansionTestCase(unittest.TestCase):
 

@@ -1,7 +1,7 @@
 """Tests for flip color."""
 import unittest
 
-import flip_color as m
+import graphs.flip_color as m
 
 
 class FlipColorTestCase(unittest.TestCase):

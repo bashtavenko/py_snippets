@@ -1,6 +1,6 @@
 import unittest
 
-import word_guess as m
+import misc.word_guess as m
 
 
 class WordGuessTestCase(unittest.TestCase):

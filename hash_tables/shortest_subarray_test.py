@@ -1,7 +1,7 @@
 """Tests for shortest subarray."""
 import unittest
 
-import shortest_subarray as m
+import hash_tables.shortest_subarray as m
 
 class ShortestSubarrayTestCase(unittest.TestCase):
 

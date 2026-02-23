@@ -2,7 +2,7 @@
 
 import unittest
 
-import merge_sorted_arrays as m
+import heaps.merge_sorted_arrays as m
 
 
 class MergeArraysTestCase(unittest.TestCase):

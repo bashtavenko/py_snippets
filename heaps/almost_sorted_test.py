@@ -1,7 +1,7 @@
 """Tests for almost sored."""
 import unittest
 
-import almost_sorted as m
+import heaps.almost_sorted as m
 
 
 class AlmostSortedTestCase(unittest.TestCase):

@@ -1,7 +1,7 @@
 """Tests for knapsack."""
 import unittest
 
-import knapsack as m
+import dp.knapsack as m
 
 
 class KnapsackTestCase(unittest.TestCase):

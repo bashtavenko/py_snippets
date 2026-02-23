@@ -1,6 +1,6 @@
 import unittest
 
-import replace_and_remove as m
+import strings.replace_and_remove as m
 
 
 class MyTestCase(unittest.TestCase):

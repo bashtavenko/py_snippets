@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp as m
+import graphs.bootcamp as m
 
 
 class GraphsTestCase(unittest.TestCase):

@@ -26,8 +26,8 @@ import sys
 
 
 def get_max_tripplet(a):
-    x = sys.maxint
-    y = sys.maxint
+    x = sys.maxsize
+    y = sys.maxsize
     for v in a:
         z = v
         print(x, y, z)

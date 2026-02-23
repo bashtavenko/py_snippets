@@ -1,6 +1,6 @@
 import unittest
 
-import bootcamp as m
+import greedy.bootcamp as m
 
 
 class BootCampTestCase(unittest.TestCase):

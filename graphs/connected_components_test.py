@@ -1,7 +1,7 @@
 """Tests for strings bootcamp."""
 import unittest
 
-import connected_components as m
+import graphs.connected_components as m
 
 
 class ConnectedComponentTestCase(unittest.TestCase):

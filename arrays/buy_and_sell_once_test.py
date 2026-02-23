@@ -2,7 +2,7 @@
 
 import unittest
 
-import buy_and_sell_once as m
+import arrays.buy_and_sell_once as m
 
 
 class BuyTestCase(unittest.TestCase):

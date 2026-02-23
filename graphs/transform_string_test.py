@@ -2,7 +2,7 @@
 
 import unittest
 
-import transform_string as m
+import graphs.transform_string as m
 
 
 class TransformTestCase(unittest.TestCase):

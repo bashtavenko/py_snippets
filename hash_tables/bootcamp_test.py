@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp as m
+import hash_tables.bootcamp as m
 
 
 class BootcampTestCase(unittest.TestCase):

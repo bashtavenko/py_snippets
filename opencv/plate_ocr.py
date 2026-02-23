@@ -10,8 +10,8 @@ from absl import app, flags
 FLAGS = flags.FLAGS
 
 flags.DEFINE_string("image", "testdata/ny_plate.png", "Path to an image")
-flags.DEFINE_bool("no_plate_detect", False, "Run OCR on full image (skip ROI detection)")
-flags.DEFINE_bool("show", True, "Show debug windows")
+flags.DEFINE_bool("no_plate_detect", True, "Run OCR on full image (skip ROI detection)")
+flags.DEFINE_bool("show", False, "Show debug windows")
 flags.DEFINE_integer("psm", 7, "Tesseract page segmentation mode (PSM)")
 flags.DEFINE_integer("oem", 3, "Tesseract OCR engine mode (OEM)")
 flags.DEFINE_string(
@@ -23,11 +23,11 @@ flags.DEFINE_string(
 
 def find_plate_roi(bgr):
     """
-    Very simple heuristic:
-    - edge detect
-    - find contours
-    - pick a likely rectangular contour (license plate-ish)
-    Returns ROI image (BGR) or None.
+    Given a full image, try to detect the biggest contour which could be a plate
+    - Edge detect
+    - Find contours
+    - Pick a likely rectangular contour (license plate-ish)
+      Returns ROI image (BGR) or None.
     """
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
     gray = cv2.bilateralFilter(gray, 11, 17, 17)
@@ -48,7 +48,7 @@ def find_plate_roi(bgr):
         area = cw * ch
         aspect = cw / float(ch)
 
-        # Loose filters: tweak as needed
+        # Maybe be tweak some heuristics here
         if area < 0.01 * (w * h):
             continue
         if not (2.0 <= aspect <= 6.5):
@@ -70,6 +70,7 @@ def _preprocess_variants_for_ocr(bgr_or_gray):
     scale = 2.5 if max(h, w) < 900 else 1.5
     gray = cv2.resize(gray, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
 
+    # It may be better than Gaussian smoothing since Gaussian breaks at the edges
     gray = cv2.bilateralFilter(gray, 9, 75, 75)
     thr = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
 
@@ -92,6 +93,7 @@ def ocr_text(bgr_or_gray):
     best_img = None
 
     for _name, img in _preprocess_variants_for_ocr(bgr_or_gray):
+        # Actual call to Tesseract
         data = pytesseract.image_to_data(img, config=config, output_type=pytesseract.Output.DICT)
 
         parts = []

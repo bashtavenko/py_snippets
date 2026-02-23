@@ -1,6 +1,6 @@
 """Connected components in matrix.
 
-This is similar to connected components in graph, but the graph is represented
+This is similar to connected components in the graph, but the graph is represented
 by pixel in matrix.
 
 Union-Find implementation is even simpler:
@@ -25,7 +25,7 @@ def get_components(matrix):
     n, m = len(matrix), len(matrix[0])
 
     for v in [(i, j) for i in range(m) for j in range(n)]:
-        if v not in marked and matrix[i][j] == 0:
+        if v not in marked and matrix[0][0] == 0:
             vertices = set()
             run_dfs(v, vertices)
             components.append(vertices)

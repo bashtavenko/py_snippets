@@ -2,7 +2,7 @@
 
 import unittest
 
-import integer_digits_order as m
+import misc.integer_digits_order as m
 
 
 class DigitsTestCase(unittest.TestCase):

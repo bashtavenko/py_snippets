@@ -1,6 +1,6 @@
 import unittest
 
-import majority_element
+import greedy.majority_element as majority_element
 
 
 class MyTestCase(unittest.TestCase):

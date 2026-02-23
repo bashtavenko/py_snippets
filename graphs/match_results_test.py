@@ -2,7 +2,7 @@
 
 import unittest
 
-import match_results as m
+import graphs.match_results as m
 
 
 class MatchResultsTestCase(unittest.TestCase):

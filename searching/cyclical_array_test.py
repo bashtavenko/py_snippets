@@ -1,8 +1,8 @@
-"""Tests for cyclical array."""
+"""Tests for a cyclical array."""
 
 import unittest
 
-import cyclical_array as m
+import searching.cyclical_array as m
 
 
 class CyclicalTestCase(unittest.TestCase):

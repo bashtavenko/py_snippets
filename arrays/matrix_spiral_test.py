@@ -1,6 +1,6 @@
 import unittest
 
-import matrix_spiral as m
+import arrays.matrix_spiral as m
 
 
 class MatrixTestCase(unittest.TestCase):

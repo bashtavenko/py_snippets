@@ -1,6 +1,6 @@
 import unittest
 
-import synonym_queries as m
+import misc.synonym_queries as m
 import collections
 
 

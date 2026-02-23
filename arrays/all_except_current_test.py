@@ -1,6 +1,6 @@
 import unittest
 
-import all_except_current as m
+import arrays.all_except_current as m
 
 CASE_1 = [2, 1, 3]
 CASE_1_RESULT = [3, 6, 2]

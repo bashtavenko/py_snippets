@@ -1,7 +1,7 @@
 """Tests for online median."""
 import unittest
 
-import online_median as m
+import heaps.online_median as m
 
 
 class OnlineMedianTestCase(unittest.TestCase):

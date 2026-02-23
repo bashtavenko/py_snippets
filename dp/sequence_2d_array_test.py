@@ -1,6 +1,6 @@
 import unittest
 
-import sequence_2d_array as m
+import dp.sequence_2d_array as m
 
 
 class MyTestCase(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-import pole as m
+import misc.pole as m
 
 WORDS = ["fuzzy", "apart", "steam", "times", "tires"]
 

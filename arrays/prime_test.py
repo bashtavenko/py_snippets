@@ -1,6 +1,6 @@
 import unittest
 
-import prime
+import arrays.prime as prime
 
 
 class PrimeTestCase(unittest.TestCase):

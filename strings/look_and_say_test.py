@@ -1,7 +1,7 @@
 """Tests for strings bootcamp."""
 import unittest
 
-import look_and_say as m
+import strings.look_and_say as m
 
 
 class LookAndSayTestCase(unittest.TestCase):

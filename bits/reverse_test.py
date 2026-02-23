@@ -1,7 +1,7 @@
 """Tests for reversals."""
 import unittest
 
-import reverse
+import bits.reverse as reverse
 
 class ReverseTestCase(unittest.TestCase):
     def testReverse(self):

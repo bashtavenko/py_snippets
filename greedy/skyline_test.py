@@ -1,6 +1,6 @@
 import unittest
 
-import skyline as m
+import greedy.skyline as m
 
 
 class SkylineTestCase(unittest.TestCase):

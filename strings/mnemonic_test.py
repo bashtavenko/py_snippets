@@ -2,7 +2,7 @@
 
 import unittest
 
-import mnemonic
+import strings.mnemonic as mnemonic
 
 
 class MnemonicTestCase(unittest.TestCase):

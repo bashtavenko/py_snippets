@@ -1,7 +1,7 @@
 """Tests for strings bootcamp."""
 import unittest
 
-import reverse_words_in_sentence as m
+import strings.reverse_words_in_sentence as m
 
 
 class ReverseTestCase(unittest.TestCase):

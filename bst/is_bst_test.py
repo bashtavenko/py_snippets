@@ -2,8 +2,8 @@
 
 import unittest
 
-import bootcamp as b
-import is_bst as m
+import bst.bootcamp as b
+import bst.is_bst as m
 
 
 class IsBstTestCase(unittest.TestCase):

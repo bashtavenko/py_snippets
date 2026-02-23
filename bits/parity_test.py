@@ -1,6 +1,6 @@
 import unittest
 
-import parity
+import bits.parity as parity
 
 
 class ParityTestCase(unittest.TestCase):

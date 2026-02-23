@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp as m
+import linked_lists.bootcamp as m
 
 
 class BootcampTestCase(unittest.TestCase):

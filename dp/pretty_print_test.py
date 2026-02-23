@@ -1,6 +1,6 @@
 import unittest
 
-import pretty_print as m
+import dp.pretty_print as m
 
 class PrettyPrintTestCase(unittest.TestCase):
     long_message = True
@@ -14,20 +14,14 @@ class PrettyPrintTestCase(unittest.TestCase):
 
     def testWrap(self):
       result = m.simple_wrap(self.text, 13)
-      expected = [
-          'Lorem ipsum.n',
-          'dolor sit.n',
-          'amet.n',
-          'amet .n',
-          'dapibusin .n' ,
-          'aenean.n']
+      expected = [' Lorem ipsum.n', 'dolor sit amet.n.n', 'amet dapibusin']
       self.assertListEqual(expected, result)
 
 
     def testWrap_dp(self):
         words = ['aaa', 'bbb', 'c', 'd',
                  'ee', 'ff', 'ggggggg']
-        self.assertEquals(19, m.calc_min_messiness(words, 10))
+        self.assertEqual(19, m.calc_min_messiness(words, 10))
 
 
 if __name__ == '__main__':

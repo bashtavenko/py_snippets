@@ -2,7 +2,7 @@
 
 import unittest
 
-import k_largest as m
+import arrays.k_largest as m
 
 
 class KlargestTestCase(unittest.TestCase):

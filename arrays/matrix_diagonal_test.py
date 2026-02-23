@@ -1,6 +1,6 @@
 import unittest
 
-import matrix_diagonal as m
+import arrays.matrix_diagonal as m
 
 
 class MyTestCase(unittest.TestCase):

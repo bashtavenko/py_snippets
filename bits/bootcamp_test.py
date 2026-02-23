@@ -2,7 +2,7 @@ import math
 import random
 import unittest
 
-import bootcamp
+import bits.bootcamp as bootcamp
 
 
 class BootcampTestCase(unittest.TestCase):

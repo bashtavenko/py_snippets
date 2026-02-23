@@ -1,6 +1,6 @@
 import unittest
 
-import max_water
+import greedy.max_water as max_water
 
 
 class MyTestCase(unittest.TestCase):

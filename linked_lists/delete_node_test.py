@@ -1,8 +1,8 @@
 """Tests for linked list with some basic operations."""
 import unittest
 
-import bootcamp as b
-import delete_node as m
+import linked_lists.bootcamp as b
+import linked_lists.delete_node as m
 
 
 class DeleteTestCase(unittest.TestCase):

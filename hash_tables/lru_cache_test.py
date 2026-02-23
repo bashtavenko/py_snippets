@@ -1,7 +1,7 @@
 """Tests for LRU cache."""
 import unittest
 
-import lru_cache as m
+import hash_tables.lru_cache as m
 
 
 class LruCacheTestCase(unittest.TestCase):

@@ -22,7 +22,7 @@ def has_cycle(head):
         slow, fast = slow.next, fast.next.next
         if slow is fast:
             # Find the start of the cycle
-            print 'Cycle'
+            print('Cycle')
             cycle_iter = head
             for _ in range(cycle_len(slow)):
                 cycle_iter = cycle_iter.nexrt

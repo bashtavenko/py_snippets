@@ -2,7 +2,7 @@
 
 import unittest
 
-import bootcamp
+import strings.bootcamp as bootcamp
 
 
 class StringsBootcampTestCase(unittest.TestCase):

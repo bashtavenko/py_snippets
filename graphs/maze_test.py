@@ -1,6 +1,6 @@
 import unittest
 
-import maze as m
+import graphs.maze as m
 
 
 class MyTestCase(unittest.TestCase):

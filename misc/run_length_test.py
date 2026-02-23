@@ -1,6 +1,6 @@
 import unittest
 
-import run_length as m
+import misc.run_length as m
 
 
 class MyTestCase(unittest.TestCase):

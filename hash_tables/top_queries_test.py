@@ -1,7 +1,7 @@
 """Tests for top queries."""
 import unittest
 
-import top_queries as m
+import hash_tables.top_queries as m
 
 class TopQueriesTestCase(unittest.TestCase):
     def setUp(self):
