@@ -1,5 +1,5 @@
 """
-Given an array of positive integers find two non-consecutive numbers with
+Given an array of positive integers, find two non-consecutive numbers with
 the largest sum.
 
 Similar to largest_pair
@@ -17,14 +17,14 @@ def max_sum_o_square(data):
 
 
 def max_sum(data):
-    # Find maximum element and its index
+    # Find the maximum element and its index
     max_item, max_item_index = 0, -1
     for i, v in enumerate(data):
         if v > max_item:
             max_item_index = i
             max_item = v
 
-    # Find second element
+    # Find the second element
     current_max = 0
     for i, v in enumerate(data):
         if v + max_item > current_max and abs((i - max_item_index)) > 1:

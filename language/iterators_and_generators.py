@@ -26,7 +26,7 @@ class RandomIncrement():
 
 
 # Generator is an easy way to create iterators.
-# Uses function call stack to remember position
+# Uses function call stack to remember the position
 # Every Generator is Iterator, but not reverse.
 def random_iterator(limit):
   offset = 0

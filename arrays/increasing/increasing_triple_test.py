@@ -2,7 +2,7 @@
 
 import unittest
 
-import increasing_triple
+from arrays.increasing import increasing_triple
 
 
 class IncreasingTrippleTestCase(unittest.TestCase):

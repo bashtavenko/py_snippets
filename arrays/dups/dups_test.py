@@ -1,6 +1,6 @@
 import unittest
 
-import arrays.dups.dups as m
+from arrays.dups import dups
 
 
 class DupsTestCase(unittest.TestCase):
@@ -8,12 +8,12 @@ class DupsTestCase(unittest.TestCase):
 
     def testDeleteDupsBruteForce(self):
         a = [2, 3, 5, 5, 7, 11, 11, 11, 13]
-        m.delete_dups_brute_force(a)
+        dups.delete_dups_brute_force(a)
         self.assertListEqual([2, 3, 5, 7, 11, 13, 0, 0, 0], a)
 
     def testDeleteDups(self):
         a = [2, 3, 5, 5, 7, 11, 11, 11, 13]
-        m.delete_dups(a)
+        dups.delete_dups(a)
         self.assertListEqual([2, 3, 5, 7, 11, 13, 0, 0, 0], a)
 
 

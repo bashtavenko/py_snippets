@@ -1,6 +1,6 @@
 import unittest
 
-import arrays.largest.largest_pair as m
+from arrays.largest import largest_pair as m
 
 
 class MaxSumTestCase(unittest.TestCase):

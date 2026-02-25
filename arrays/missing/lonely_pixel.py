@@ -1,4 +1,4 @@
-"""Locate lonely pixel in a binary array."""
+"""Locate a lonely pixel in a binary array."""
 
 
 def lonely_pixel(image):

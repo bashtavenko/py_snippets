@@ -1,12 +1,12 @@
 """Tests for number_twice_once."""
 import unittest
 
-import arrays.dups.number_twice_once as m
+from arrays.dups import number_twice_once
 
 
 class NumberTwiceTestCase(unittest.TestCase):
     def setUp(self):
-        self.funcs = [m.find, m.find_xor, m.find_binary_search]
+        self.funcs = [number_twice_once.find, number_twice_once.find_xor, number_twice_once.find_binary_search]
 
     def testNumber(self):
         for f in self.funcs:

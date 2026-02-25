@@ -11,11 +11,11 @@ import itertools
 # Ranges
 # (start:stop:step)
 # stop - stop BEFORE this, last one
-# This is half-open slice
+# This is a half-open slice
 # range (n, m) contains m-n elements
-range(3)  # from zero up to the number(not including, 0, 1, 2
+range(3)  # from zero up to the number (not including, 0, 1, 2
 range(1, 5)  # from number to number not including, 1, 2, 3, 4
-range(2, -1, -1)  # From number down not including, 2, 1, 0
+range(2, -1, -1)  # From number down, not including, 2, 1, 0
 
 
 # Slicing
@@ -38,14 +38,14 @@ range(2, -1, -1)  # From number down not including, 2, 1, 0
 [x for x in [3, 4, 5, 6, 7] if x > 5]  # => [6, 7]
 
 # Dict comp
-vocab = {} # some vocab
+# Find the last position of character and reverse
+vocab = 'abcac'
 ch_to_i = {char: i for i, char in enumerate(vocab)}
 i_to_ch = {i: char for i, char in enumerate(vocab)}
 
-
 # List stuff
-a = list("abc")  # list from str
-"".join(["a", "b", "c"])  # list str to str
+a = list('abc')  # list from str
+"".join(['a', 'b', 'c'])  # list str to str = 'abc'
 # l.append(a) add one
 # l.extend(bunch) add more
 
@@ -66,8 +66,8 @@ a = list("abc")  # list from str
 
 
 # Itertools
-# Running sum  1,2,3,4,5 --> 1 3 6 10 15
-itertools.accumulate()
+# Prefix sum (or running sum)  [1, 3, 5] = [1, 4, 9]
+list(itertools.accumulate([1, 3, 5]))
 # Iterator slice. Can get iterator with sequence = iter(a)
 # itertools.islice(sequence, k)
 # itertools.groupby(s)
@@ -75,11 +75,10 @@ itertools.accumulate()
 # Functools
 # reduce(operator.mul, data)
 # Returns value of two numbers for each iterable
-# 0, 1, 2, 3, 4
-# 1, 2, 3, 4
-# 3, 3, 4
-# 6, 4
-# 10
+# 1, 2, 3, 4, 5
+# 1 + 2 = 3; 3 + 3 = 6; 6 + 4 = 10; 10 + 5 = 15
+# functools.reduce(operator.add, [1, 2, 3, 4, 5] => 15
+# or reduce(lambda x, y: x + y, numbers)
 
 # Conversion and checks
 # .isdigit
@@ -91,7 +90,7 @@ for x, y in (0, 1), (0, -1), (1, 0), (-1, 0):
 
 # Histogram
 hist = {}
-t = [1, 2, 4]
+t = [1, 2, 4, 1]
 for x in t:
     hist[x] = hist.get(x, 0) + 1
 # Check for key => if "key1" in d

@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import square as m
+from arrays.largest.segment import square as m
 
 
 class LargestSquare(TestCase):

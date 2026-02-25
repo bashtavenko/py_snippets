@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import segment as m
+from arrays.largest.segment import segment as m
 
 
 class SegmentTestCase(TestCase):

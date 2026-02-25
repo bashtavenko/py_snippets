@@ -1,6 +1,6 @@
-"""Find the biggest consecutive segment within budget.
- Returns the best sum which is no greater than budget.
-This is similar to largest_pair, same idea.
+"""Find the biggest consecutive segment within the budget.
+ Returns the best sum, which is not greater than budget.
+This is similar to largest_pair, the same idea.
 """
 
 

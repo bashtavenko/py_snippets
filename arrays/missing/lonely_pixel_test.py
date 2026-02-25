@@ -1,6 +1,6 @@
 import unittest
 
-import lonely_pixel as m
+from arrays.missing import lonely_pixel as m
 
 
 class LonelyPixelTestCase(unittest.TestCase):

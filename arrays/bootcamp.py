@@ -26,7 +26,7 @@ def shuffle_sort(a):
     # Idea - build a random array of the same length, sort it
     # [64, 1, 0, 8] => [0, 1, 8, 64]
     # p.index(s) for s in p_sorted => [2, 1, 3, 0]
-    # n^3 to make sure that p are unique otherwise result may have dups
+    # n^3 to make sure that p are unique otherwise a result may have dups
     p = [random.randint(i, pow(len(a), 3)) for i in range(len(a))]
     p_sorted = sorted(p)
     # index - returns element whose value is equal to s

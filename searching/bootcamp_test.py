@@ -9,7 +9,7 @@ class BootcampTestCase(unittest.TestCase):
     def setUp(self):
         self.data = [1, 3, 6, 7, 9, 25]
         # self.function = m.binary_search_i
-        self.function = m.binary_search_r
+        self.function = m.binary_search_i
 
     def testBinarySearch(self):
         self.assertEqual(2, self.function(self.data, 4))
