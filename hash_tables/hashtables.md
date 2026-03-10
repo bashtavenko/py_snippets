@@ -7,8 +7,8 @@ for x in t:
 
 d = {1: "a", 2 : "b"}
 d.values()
-
-v in hist
+d.pop(1) # remove 1 
+d.popitem() # Last remove item
 
 collections.defaultdict(list)
 

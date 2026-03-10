@@ -120,6 +120,8 @@ any(id in requesters for id in BOTS)  # False
 # AND in check
 # ... and vals
 
-
 # Duplicate elimination in list
 [(i, x) for i, x in enumerate(a) if (i==0 or x!=a[i - 1])]
+
+# F-string
+# print(f"Adding w - {w}")

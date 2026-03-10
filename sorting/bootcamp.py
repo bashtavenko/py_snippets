@@ -30,7 +30,7 @@ def run():
     table = {"a": 1, "b": 10, "c": 3}
     sorted_keys = sorted(table, key=table.get)
 
-    # Sort dictionary by key into list of tuples
+    # Sort dictionary by key into a list of tuples
     table = {"a": 1, "b": 10, "c": 3}
     sorted_by_key = sorted(table.items())
     sorted_by_value = sorted(table.items(), key=lambda x: x[1])
