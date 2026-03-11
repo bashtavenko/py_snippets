@@ -20,7 +20,7 @@ def process_commands(commands):
                     old_value = db[key]
                     value_count[old_value] -= 1
                     if value_count[old_value] == 0:
-                        del value_count[old_value]
+                        value_count.pop(old_value)
                 db[key] = value
                 value_count[value] = value_count.get(value, 0) + 1
             elif action == "GET":
@@ -32,7 +32,7 @@ def process_commands(commands):
                     value = db[key]
                     value_count[value] -= 1
                     if value_count[value] == 0:
-                        del value_count[value]
+                        value_count.pop(value)
                     del db[key]
             elif action == "COUNT":
                 value = parts[1]
