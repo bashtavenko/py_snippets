@@ -6,9 +6,8 @@ from misc.ica import queries
 class QueriesTests(unittest.TestCase):
     failureException = Exception
 
-    @classmethod
-    def setUp(cls):
-        cls.container = queries
+    def setUp(self):
+        self.container = queries
 
     def test_queries_all(self):
         queries = [["ADD", "0"],

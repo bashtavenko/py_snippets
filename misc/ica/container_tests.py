@@ -6,9 +6,8 @@ from misc.ica.container import IntegerContainer
 class ContainerTests(unittest.TestCase):
     failureException = Exception
 
-    @classmethod
-    def setUp(cls):
-        cls.container = IntegerContainer()
+    def setUp(self):
+        self.container = IntegerContainer()
 
     def test_level_1_case_01_add_two_numbers(self):
         self.assertEqual(self.container.add(10), 1)

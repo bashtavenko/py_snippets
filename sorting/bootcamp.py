@@ -32,8 +32,9 @@ def run():
 
     # Sort dictionary by key into a list of tuples
     table = {"a": 1, "b": 10, "c": 3}
-    sorted_by_key = sorted(table.items())
+    sorted_list_by_key = sorted(table.items())  # Returns list
     sorted_by_value = sorted(table.items(), key=lambda x: x[1])
+    sorted_dict_by_key = dict(sorted(table.items()))  # Returns dict
 
 
 if __name__=="__main__":
