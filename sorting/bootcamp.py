@@ -18,7 +18,7 @@ def run():
         Student("D", 3.2),
     ]
 
-    # Sorted function (returns new array)
+    # Sorted function (returns a new array)
     sorted_by_name = sorted(students)  # uses object __lt__
     # Use lambda
     sorted_by_gpa = sorted(students, key=lambda student: student.gpa)
@@ -35,6 +35,15 @@ def run():
     sorted_list_by_key = sorted(table.items())  # Returns list
     sorted_by_value = sorted(table.items(), key=lambda x: x[1])
     sorted_dict_by_key = dict(sorted(table.items()))  # Returns dict
+
+    # We have (path, size) tuples
+    # The key should be (-size, path)
+    # -size makes the sort descending
+    # path keeps alphabetical order when sizes are equal
+    # result.sort(key=lambda x: (-x[1], x[0]))
+
+    # sorted() works on any iterable, returns a new list
+    # list.sort() works on any list, modifies the list in place
 
 
 if __name__=="__main__":

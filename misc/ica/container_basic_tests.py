@@ -3,25 +3,8 @@ from misc.ica.container_basic import Container
 from timeout_decorator import timeout
 
 class ContainerBasicTests(unittest.TestCase):
-    failureException = Exception
-
     def setUp(self):
         self.container = Container()
-
-    """
-        This test class includes 10 tests.
-
-        All have the same score.
-        You are not allowed to modify this file,
-        but feel free to read the source code
-        to better understand the details of all test cases.
-        """
-
-    failureException = Exception
-
-    @classmethod
-    def setUp(cls):
-        cls.container = Container()
 
     """
     Add 1, 2, 5, 7, 9 -> [1, 2, 5, 7, 9]
