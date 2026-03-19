@@ -35,6 +35,13 @@ class BootcampTestCase(unittest.TestCase):
     def testSuccessor(self):
         b.find_successor(self.tree)
 
+    def testClosest(self):
+        self.assertEqual(b.search_closest(self.tree, 9), 10)
+        self.assertEqual(b.search_closest(self.tree, 11), 10)
+        self.assertEqual(b.search_closest(self.tree, 26), 25)
+        self.assertEqual(b.search_closest(self.tree, 20), 20)
+        self.assertEqual(b.search_closest(self.tree, 21), 20)
+
 
 if __name__=="__main__":
     unittest.main()

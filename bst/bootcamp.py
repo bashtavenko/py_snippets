@@ -16,11 +16,44 @@ class BSTNode:
 
 
 def search(node, value):
-    """Returns node with a given value or None."""
+    """Returns a node with a given value or None."""
     if not node or node.data==value:
         return node
 
     return search(node.left, value) if value < node.data else search(node.right, value)
+
+def search_closest(node, value, closest=None):
+    """Returns the closest node to the given value."""
+    if node is None:
+        return closest
+
+    if closest is None or abs(node.data - value) < abs(closest - value):
+        closest = node.data
+
+    if value < node.data:
+        return search_closest(node.left, value, closest)
+    elif value > node.data:
+        return search_closest(node.right, value, closest)
+    else:
+        return node.data
+
+
+def search_closest_iterative(node, value):
+    """Returns the closest node to the given value."""
+    closest = node.data
+
+    while node:
+        if abs(node.data - value) < abs(closest - value):
+            closest = node.data
+
+        if value < node.data:
+            node = node.left
+        elif value > node.data:
+            node = node.right
+        else:
+            return node.data
+
+    return closest
 
 
 def search_iterative(node, value):
